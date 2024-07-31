@@ -24,7 +24,7 @@ Scores were calculated for three scenarios:
 
 Crop species with the highest overall score are deemed suitable for the field.
 
-## Introduction
+## Overview
 
 The most reliable predictor of what crop will be planted in a particular field for a growing season (the crop profile for the field) is what crops were planted in previous seasons.  However, climate change will force crop profiles into regimes outside of the historical context. The goal of this project is to assess which crops are suitable for fields in the Southwest United States given a set of climate-dependent conditions: weather, water, sun, and soil. The conditions of each agricultural field are matched to the growth requirements of 2,580 plant species based on three scenarios: current conditions, and projections for mid-century under mid-level and high-level CO2 emissions.  The best-matching crops for each set of conditions represent the suitable crops. To evaluate the matching crops, three sets of suitable crops (recent past, mid-century medium carbon, and mid-century high carbon) are compared to known crop sequences for each field. A feedback layer enables stakeholders to indicate whether suitable crops are relevant or not; relevance feedback is used to adjust scoring based on human expertise.   The suitabile crops, known crop sequences, and representative data sources are presented as map layers to facilitate comparison, reveal spatial patterns, promote stakeholder engagement, and provide feedback.  Overall, the patterns of recommended crops profoundly shift in distribution and content depending on climate scenario.
 
