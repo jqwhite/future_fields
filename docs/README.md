@@ -9,5 +9,5 @@
 Here is an embedded interactive map with crop recommendations:
 
 <iframe src="https://future-fields.s3.amazonaws.com/sample_map.html" 
-        width="100%" height="600" frameborder="0" allowfullscreen>
+        width="100%" height="1200" frameborder="0" allowfullscreen>
 </iframe>
