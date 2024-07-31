@@ -2,7 +2,7 @@
 
 ## Test Pages Site
 
-[Map with Crop Recommendations Download](https://drive.google.com/uc?export=view&id=1gM29Ks0jK4YlGchxkJanhfMfA4Xg8_Uj)
+[Map with Crop Recommendations Download](https://future-fields.s3.amazonaws.com/map_with_crop_recommendations_popup_and_comparison_layer.html)
 
 ## Interactive Map
 
