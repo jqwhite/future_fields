@@ -1,27 +1,3 @@
-
-
-
-
-Conversion time: 0.231 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β37
-* Wed Aug 07 2024 12:12:03 GMT-0700 (PDT)
-* Source doc: Future Fields
-* This is a partial selection. Check to make sure intra-doc links work.
-
-
-
-
 # Future Fields
 
 
