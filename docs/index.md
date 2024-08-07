@@ -1,4 +1,4 @@
-<!-----
+
 
 
 
@@ -18,7 +18,7 @@ Conversion notes:
 * Wed Aug 07 2024 12:12:03 GMT-0700 (PDT)
 * Source doc: Future Fields
 * This is a partial selection. Check to make sure intra-doc links work.
------>
+
 
 
 
@@ -35,27 +35,27 @@ Conversion notes:
 Here is an embedded interactive map with crop recommendations:
 
 
-```
+<!-----
 <iframe src="https://future-fields.s3.amazonaws.com/map_with_crop_recommendations_popup_and_comparison_layer.html" 
         width="100%" 
         height="800" 
         frameborder="0" 
         allowfullscreen>
 </iframe>
-```
+----->
 
 
 Here is an updated map:
 
 
-```
+<!-----
 <iframe src="https://future-fields.s3.amazonaws.com/map_with_crop_recommendations_popup_and_scenario_comparisons.html" 
         width="100%" 
         height="800" 
         frameborder="0" 
         allowfullscreen>
 </iframe>
-```
+----->
 
 
 It takes a while to load, so please be patient.
