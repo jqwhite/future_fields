@@ -20,7 +20,7 @@ Scores were calculated for three scenarios:
 
 - recent past (1970-2005)
 - mid-century medium carbon (2039-2065, RCP 4.5)
-- mid-century high carbon 
+- mid-century high carbon (2039-2065, RCP 8.5)
 
 Crop species with the highest overall score are deemed suitable for the field.
 
