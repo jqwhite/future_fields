@@ -75,7 +75,7 @@ A `python` environment with `xarray`, `rioxarray`, `dask`, `netcdf4`, `pandas`, 
 
 ## License information
 
-The code here is provided under the 
+The code here is provided under the MIT License. Details are in the `LICENSE` file. Terms-of-use for the data sources in this project are specified by the owners of the original data sources.  Refer to  the citations for each data source. 
 
 
 ## References
