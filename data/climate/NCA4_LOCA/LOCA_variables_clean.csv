@@ -1,0 +1,48 @@
+,Variable,Description
+0,Cooling Degree Days, Cooling degree days (annual cumulative number of degrees by which the daily average temperature is greater than 65°F) [degree days (degF)]
+1,Consecutive Dry Days, Annual maximum number of consecutive dry days (days with total precipitation less than 0.01 inches)
+2,Consecutive Dry Days Jan Jul Aug," Summer maximum number of consecutive dry days (days with total precipitation less than 0.01 inches in June, July, and August)"
+3,Consecutive Wet Days, Annual maximum number of consecutive wet days (days with total precipitation greater than or equal to 0.01 inches)
+4,First Freeze Day, Date of the first fall freeze (annual first occurrence of a minimum temperature at or below 32degF in the fall)
+5,Growing Degree Days," Growing degree days, base 50 (annual cumulative number of degrees by which the daily average temperature is greater than 50°F) [degree days (degF)]"
+6,Growing Degree Days Modified," Modified growing degree days, base 50 (annual cumulative number of degrees by which the daily average temperature is greater than 50°F; before calculating the daily average temperatures, daily maximum temperatures above 86°F and daily minimum temperatures below 50°F are set to those values) [degree days (degF)]"
+7,growing-season, Length of the growing (frost-free) season (the number of days between the last occurrence of a minimum temperature at or below 32degF in the spring and the first occurrence of a minimum temperature at or below 32degF in the fall)
+8,Growing Season 28F," Length of the growing season, 28°F threshold (the number of days between the last occurrence of a minimum temperature at or below 28°F in the spring and the first occurrence of a minimum temperature at or below 28°F in the fall)"
+9,Growing Season 41F," Length of the growing season, 41°F threshold (the number of days between the last occurrence of a minimum temperature at or below 41°F in the spring and the first occurrence of a minimum temperature at or below 41°F in the fall)"
+10,Heating Degree Days, Heating degree days (annual cumulative number of degrees by which the daily average temperature is less than 65°F) [degree days (degF)]
+11,Last Freeze Day, Date of the last spring freeze (annual last occurrence of a minimum temperature at or below 32degF in the spring)
+12,Precip Above 99th pctl," Annual total precipitation for all days exceeding the 99th percentile, calculated with reference to 1976-2005 [inches]"
+13,Precip Annual Total, Annual total precipitation [inches]
+14,Precip Days Above 99th pctl," Annual number of days with precipitation exceeding the 99th percentile, calculated with reference to 1976-2005 [inches]"
+15,Precip 1in, Annual number of days with total precipitation greater than 1 inch
+16,Precip 2in, Annual number of days with total precipitation greater than 2 inches
+17,Precip 3in, Annual number of days with total precipitation greater than 3 inches
+18,Precip 4in, Annual number of days with total precipitation greater than 4 inches
+19,Precip Max 1 Day, Annual highest precipitation total for a single day [inches]
+20,Precip Max 5 Day, Annual highest precipitation total over a 5-day period [inches]
+21,Daily Avg Temperature, Daily average temperature [degF]
+22,Daily Max Temperature, Daily maximum temperature [degF]
+23,Temp Max Days Above 99th pctl," Annual number of days with maximum temperature greater than the 99th percentile, calculated with reference to 1976-2005"
+24,Temp Max Days Below 1st pctl," Annual number of days with maximum temperature lower than the 1st percentile, calculated with reference to 1976-2005"
+25,Days Above 100F, Annual number of days with a maximum temperature greater than 100degF
+26,Days Above 105F, Annual number of days with a maximum temperature greater than 105degF
+27,Days Above 110F, Annual number of days with a maximum temperature greater than 110degF
+28,Days Above 115F, Annual number of days with a maximum temperature greater than 115degF
+29,Temp Max 1 Day, Annual single highest maximum temperature [degF]
+30,Days Above 32F, Annual number of icing days (days with a maximum temperature less than 32degF)
+31,Temp Max 5 Day, Annual highest maximum temperature averaged over a 5-day period [degF]
+32,Days Above 86F, Annual number of days with a maximum temperature greater than 86degF
+33,Days Above 90F, Annual number of days with a maximum temperature greater than 90degF
+34,Days Above 95F, Annual number of days with a maximum temperature greater than 95degF
+35,Temp Min, Daily minimum temperature [degF]
+36,Temp Min Days Above 75F, Annual number of days with a minimum temperature greater than 75degF
+37,Temp Min Days Above 80F, Annual number of days with a minimum temperature greater than 80degF
+38,Temp Min Days Above 85F, Annual number of days with a minimum temperature greater than 85degF
+39,Temp Min Days Above 90F, Annual number of days with a minimum temperature greater than 90degF
+40,Temp Min Days Above 99th pctl," Annual number of days with minimum temperature greater than the 99th percentile, calculated with reference to 1976-2005"
+41,Temp Min Days Below 1st pctl," Annual number of days with minimum temperature lower than the 1st percentile, calculated with reference to 1976-2005"
+42,Temp Min Days Below 28F, Annual number of days with a minimum temperature less than 28degF
+43,Temp Min Max 5 Day, Annual highest minimum temperature averaged over a 5-day period [degF]
+44,Temp Min 1 Day, Annual single lowest minimum temperature [degF]
+45,Temp Min 32F, Annual number of frost days (days with a minimum temperature less than 32degF)
+46,Temp Min 5 Day, Annual lowest minimum temperature averaged over a 5-day period [degF]
