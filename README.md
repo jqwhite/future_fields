@@ -50,15 +50,20 @@ For most fields the actual crop sequences are not in the set of crops with a hig
 
 ## Data sources
 
-
-
 * Agricultural field data: The [Crop Sequence Boundary](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/) file for the 2016-2023 growing seasons from the [National Agricultural Statistics Service](https://www.nass.usda.gov/i) [ ~[5.6Gb .zip file](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/datasets/NationalCSB_2016-2023_rev23.zip) ].  This dataset contains field location, shape, and attributes for agricultural fields in the Continental United States [ [CSB Viewer](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/i) ] .
+
 * Crop characteristics data: The [EcoCrop Crop Database](https://gaez.fao.org/pages/ecocrop) [(Brown ; Heaivilin ; Food and Agricultural Organization of...)](https://paperpile.com/c/IkePR6/Y9Kd+6jz7+fB0j).  The version for this study is was combined from two sources [(Heaivilin ; Brown )](https://paperpile.com/c/IkePR6/6jz7+Y9Kd), and scraped USDA climate zone data. It is available as `EcoCrop_Complete.csv`.
+
 * Climate Zone Data: [High-resolution (1 km) Köppen-Geiger maps for 1901–2099](https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074/1) based on constrained CMIP6 projections [[ ~90Mb .zip file](https://figshare.com/ndownloader/articles/21789074/versions/1) ] [(Beck et al. 2023)](https://paperpile.com/c/IkePR6/rihb).
+
 * Climate data for temperature and growing season: [The  Localized Constructed Analogs (LOCA) Derived Variables](https://atlas.globalchange.gov/pages/nca4archive) from the [4th National Climate Assessment](https://atlas.globalchange.gov/pages/nca4archive) [ [~2.8 Gb .zip file](https://downloads.globalchange.gov/scenarios/LOCA_data_all.tar.gz) ] [(U.S. Global Change Research Program (...; U.S. Global Change Research Program (...)](https://paperpile.com/c/IkePR6/1QP6+KHzs).
+
 * Climate data for spring and summer temperature: 
+
 * A translation file of Cropland Data Layer / Crop Sequence Boundary crop codes to likely EcoCrop species.
+
 * A translation file of from Köppen-Geiger Climate Zones (Climate Model) to Trewartha Climate Zones (EcoCrop).
+
 * 
 
 
