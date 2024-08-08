@@ -1,0 +1,16 @@
+# Define the Trewartha to Köppen–Geiger mapping
+trewartha_to_koppen = {
+    'Aw': ['Aw'],                  # Tropical wet & dry
+    'Ar': ['Af', 'Am'],            # Tropical wet
+    'Bs': ['BSh', 'BSk'],          # Steppe or semiarid
+    'Cf': ['Cfa', 'Cfb', 'Cfc'],   # Subtropical humid
+    'Cs': ['Csa', 'Csb', 'Csc'],   # Subtropical dry summer
+    'Cw': ['Cwa', 'Cwb', 'Cwc'],   # Subtropical dry winter
+    'Bw': ['BWh', 'BWk'],          # Desert or arid
+    'Do': ['Cfb', 'Cfc'],          # Temperate oceanic
+    'Dc': ['Dfa', 'Dfb', 'Dfc', 'Dfd'],  # Temperate continental
+    'Df': ['Dfa', 'Dfb', 'Dfc', 'Dfd'],  # Temperate with humid winters
+    'Dw': ['Dwa', 'Dwb', 'Dwc', 'Dwd'],  # Temperate with dry winters
+    'E' : ['ET'],                  # Boreal
+    'F' : ['EF']                   # Polar
+}
