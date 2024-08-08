@@ -50,26 +50,24 @@ For most fields the actual crop sequences are not in the set of crops with a hig
 
 ## Data sources
 
-* Agricultural field data: The [Crop Sequence Boundary](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/) file for the 2016-2023 growing seasons from the [National Agricultural Statistics Service](https://www.nass.usda.gov/i) [ ~[5.6Gb .zip file](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/datasets/NationalCSB_2016-2023_rev23.zip) ].  This dataset contains field location, shape, and attributes for agricultural fields in the Continental United States [ [CSB Viewer](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/i) ] .
-
-* Crop characteristics data: The [EcoCrop Crop Database](https://gaez.fao.org/pages/ecocrop) [(Brown ; Heaivilin ; Food and Agricultural Organization of...)](https://paperpile.com/c/IkePR6/Y9Kd+6jz7+fB0j).  The version for this study is was combined from two sources [(Heaivilin ; Brown )](https://paperpile.com/c/IkePR6/6jz7+Y9Kd), and scraped USDA climate zone data. It is available as `EcoCrop_Complete.csv`.
-
-* Climate Zone Data: [High-resolution (1 km) Köppen-Geiger maps for 1901–2099](https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074/1) based on constrained CMIP6 projections [[ ~90Mb .zip file](https://figshare.com/ndownloader/articles/21789074/versions/1) ] [(Beck et al. 2023)](https://paperpile.com/c/IkePR6/rihb).
-
-* Climate data for temperature and growing season: [The  Localized Constructed Analogs (LOCA) Derived Variables](https://atlas.globalchange.gov/pages/nca4archive) from the [4th National Climate Assessment](https://atlas.globalchange.gov/pages/nca4archive) [ [~2.8 Gb .zip file](https://downloads.globalchange.gov/scenarios/LOCA_data_all.tar.gz) ] [(U.S. Global Change Research Program (...; U.S. Global Change Research Program (...)](https://paperpile.com/c/IkePR6/1QP6+KHzs).
-
-* Climate data for spring and summer temperature: 
-
-* A translation file of Cropland Data Layer / Crop Sequence Boundary crop codes to likely EcoCrop species.
-
-* A translation file of from Köppen-Geiger Climate Zones (Climate Model) to Trewartha Climate Zones (EcoCrop).
-
+* **Agricultural field data:** The [Crop Sequence Boundary](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/) file for the 2016-2023 growing seasons from the [National Agricultural Statistics Service](https://www.nass.usda.gov/i) [ ~[5.6Gb .zip file](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/datasets/NationalCSB_2016-2023_rev23.zip) ].  This dataset contains field location, shape, and attributes for agricultural fields in the Continental United States [ [CSB Viewer](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/i) ] .
+* **Crop characteristics data:** The [EcoCrop Crop Database](https://gaez.fao.org/pages/ecocrop) [1–3].  The version for this study was combined from two sources [1,2], and scraped USDA climate zone data. It is available as `EcoCrop_Complete.csv`.
+* **Climate Zone Data:** [High-resolution (1 km) Köppen-Geiger maps for 1901–2099](https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074/1) based on constrained CMIP6 projections [[ ~90Mb .zip file](https://figshare.com/ndownloader/articles/21789074/versions/1) ] [4].
+* **Climate data for temperature and growing season:** [The  Localized Constructed Analogs (LOCA) Derived Variables](https://atlas.globalchange.gov/pages/nca4archive) from the [4th National Climate Assessment](https://atlas.globalchange.gov/pages/nca4archive) [ [~2.8 Gb .zip file](https://downloads.globalchange.gov/scenarios/LOCA_data_all.tar.gz) ] [5,6].
+* **Climate data for spring and summer temperature and precipitation:** The Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for mean and minimum summer temperatures, minimum annual temperatures, and annual precipitation for recent and mid-century climate scenarios. ** **[7]
+* **Crop translator: **A translation file of Cropland Data Layer / Crop Sequence Boundary crop codes to likely EcoCrop species: `cdl_to_ecocrop_code_translator.csv`
+* **Climate zone translator:** A translation file of from Köppen-Geiger Climate Zones (Climate Model) to Trewartha Climate Zones (EcoCrop): 
+* **Elevation:** Digital Elevation Model from the [PRISM Climate Group](https://prism.oregonstate.edu/downloads/) [ [835 Kb zip](https://prism.oregonstate.edu/downloads/data/PRISM_us_dem_4km_bil.zip) ] [8].
 * 
 
 
 ## System requirements
 
-A `python` environment with `xarray`, `rioxarray`, `dask`, `netcdf4`, `pandas`, `geopandas`, and `folium`.  A full example environment is provided in `requirements.txt`
+A `python` environment with `xarray`, `rioxarray`, `dask`, `netcdf4`, `pandas`, `geopandas`, and `folium`. 
+
+`altair`, `matplotlib`, `shapely`, `rasterio`, 
+
+A full example environment is provided in `requirements.txt`
 
 
 ## Methods
@@ -85,26 +83,27 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 ## References
 
-1. 	[Brown M. ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database. Github; Available: https://github.com/OpenCLIM/ecocrop](http://paperpile.com/b/IkePR6/Y9Kd)
+    1. 	Brown M. ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database. Github; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
 
 
-2. 	[Heaivilin H. EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database. Github; Available: https://github.com/supersistence/EcoCrop-ScrapeR](http://paperpile.com/b/IkePR6/6jz7)
+    2. 	Heaivilin H. EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database. Github; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
 
 
-3. 	[Food and Agricultural Organization of the United Nations. Crop ecological requirements database (ECOCROP). In: Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox [Internet]. 2015 [cited 10 Jun 2024]. Available: https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](http://paperpile.com/b/IkePR6/fB0j)
+    3. 	Food and Agricultural Organization of the United Nations. Crop ecological requirements database (ECOCROP). In: Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
 
 
-4. 	[Beck HE, McVicar TR, Vergopolan N, Berg A, Lutsko NJ, Dufour A, et al. High-resolution (1 km) Köppen-Geiger maps for 1901-2099 based on constrained CMIP6 projections. Sci Data. 2023;10: 724.](http://paperpile.com/b/IkePR6/rihb)
+    4. 	Beck HE, McVicar TR, Vergopolan N, Berg A, Lutsko NJ, Dufour A, et al. High-resolution (1 km) Köppen-Geiger maps for 1901-2099 based on constrained CMIP6 projections. Sci Data. 2023;10: 724. doi:[10.1038/s41597-023-02549-6](http://dx.doi.org/10.1038/s41597-023-02549-6)
 
 
-5. 	[U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, Risks, and Adaptation in the United States. Summary findings and overview. U.S. Global Change Research Program; 2017.](http://paperpile.com/b/IkePR6/1QP6)
+    5. 	U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, Risks, and Adaptation in the United States. Summary findings and overview. U.S. Global Change Research Program; 2017. Available: [https://play.google.com/store/books/details?id=RlVFxwEACAAJ](https://play.google.com/store/books/details?id=RlVFxwEACAAJ)
 
 
-6. 	[U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, risks, and adaptation in the United States. Report-in-brief. U.S. Global Change Research Program; 2018.](http://paperpile.com/b/IkePR6/KHzs)
+    6. 	U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, risks, and adaptation in the United States. Report-in-brief. U.S. Global Change Research Program; 2018. Available: [https://play.google.com/store/books/details?id=l0cBvwEACAAJ](https://play.google.com/store/books/details?id=l0cBvwEACAAJ)
 
 
-7. 	[Hegewisch KCAJTA. “Climate Mapper” web tool. In: Climate Toolbox [Internet]. [cited 7 Aug 2024]. Available: https://climatetoolbox.org/](http://paperpile.com/b/IkePR6/kM3l)
+    7. 	Hegewisch KCAJTA. “Climate Mapper” web tool. In: Climate Toolbox [Internet]. [cited 7 Aug 2024]. Available: [https://climatetoolbox.org/](https://climatetoolbox.org/)
 
 
-8. 	[PRISM Climate Group, Oregon State University. PRISM Spatial Climate Datasets for the Conterminous United States. 2014. Available: https://prism.oregonstate.edu,](http://paperpile.com/b/IkePR6/cV4m)
+    8. 	PRISM Climate Group, Oregon State University. PRISM Spatial Climate Datasets for the Conterminous United States. 2014. Available: [https://prism.oregonstate.edu,](https://prism.oregonstate.edu,)
+
 
