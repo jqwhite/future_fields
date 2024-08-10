@@ -8,7 +8,7 @@
 
 ## Interactive Map
 
-Here is an embedded interactive map with crop recommendations:
+Here is an embedded interactive map with crop assesments (it takes a while to load, so please be patient):
 
 <!--- https://future-fields.s3.amazonaws.com/sample_map4.html --->
 
@@ -19,7 +19,7 @@ Here is an embedded interactive map with crop recommendations:
         allowfullscreen>
 </iframe>
 
-It takes a while to load, so please be patient.
+
 
 
 
