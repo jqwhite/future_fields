@@ -45,6 +45,7 @@ ca-certificates           2024.7.4             hf0a4a13_0    conda-forge
 cached-property           1.5.2                hd8ed1ab_1    conda-forge
 cached_property           1.5.2              pyha770c72_1    conda-forge
 cairo                     1.18.0               hb4a6bf7_3    conda-forge
+cartopy                   0.23.0          py312h8ae5369_1    conda-forge
 certifi                   2024.7.4           pyhd8ed1ab_0    conda-forge
 cffi                      1.16.0          py312h8e38eb3_0    conda-forge
 cfitsio                   4.4.1                h793ed5c_0    conda-forge
@@ -61,6 +62,7 @@ cytoolz                   0.12.3          py312he37b823_0    conda-forge
 dask                      2024.7.1           pyhd8ed1ab_0    conda-forge
 dask-core                 2024.7.1           pyhd8ed1ab_0    conda-forge
 dask-expr                 1.1.9              pyhd8ed1ab_0    conda-forge
+dask-geopandas            0.4.1              pyhd8ed1ab_0    conda-forge
 debugpy                   1.8.2           py312h5c2e7bc_0    conda-forge
 decorator                 5.1.1              pyhd8ed1ab_0    conda-forge
 defusedxml                0.7.1              pyhd8ed1ab_0    conda-forge
@@ -251,6 +253,7 @@ postgresql                16.3                 hdfa2ec6_0    conda-forge
 proj                      9.4.1                hfb94cee_0    conda-forge
 prometheus_client         0.20.0             pyhd8ed1ab_0    conda-forge
 prompt-toolkit            3.0.47             pyha770c72_0    conda-forge
+protobuf                  4.25.3          py312h1a610f3_0    conda-forge
 psutil                    6.0.0           py312h7e5086c_0    conda-forge
 psycopg                   3.2.1           py312hfa0702a_0    conda-forge
 psycopg-c                 3.2.1           py312h5e6b967_0    conda-forge
@@ -268,6 +271,7 @@ pyobjc-framework-cocoa    10.3.1          py312hbb55c70_0    conda-forge
 pyogrio                   0.9.0           py312h15038b3_0    conda-forge
 pyparsing                 3.1.2              pyhd8ed1ab_0    conda-forge
 pyproj                    3.6.1           py312h64656f7_7    conda-forge
+pyshp                     2.3.1              pyhd8ed1ab_0    conda-forge
 pysocks                   1.7.1              pyha2e5f31_6    conda-forge
 python                    3.12.4          h30c5eda_0_cpython    conda-forge
 python-dateutil           2.9.0              pyhd8ed1ab_0    conda-forge
@@ -321,6 +325,9 @@ tzdata                    2024a                h0c530f3_0    conda-forge
 uri-template              1.3.0              pyhd8ed1ab_0    conda-forge
 uriparser                 0.9.8                h00cdb27_0    conda-forge
 urllib3                   2.2.2              pyhd8ed1ab_1    conda-forge
+vegafusion                1.6.9              pyhd8ed1ab_0    conda-forge
+vegafusion-python-embed   1.6.9           py312h552d48e_0    conda-forge
+vl-convert-python         1.6.0           py312h7e5086c_0    conda-forge
 wcwidth                   0.2.13             pyhd8ed1ab_0    conda-forge
 webcolors                 24.6.0             pyhd8ed1ab_0    conda-forge
 webencodings              0.5.1              pyhd8ed1ab_2    conda-forge
