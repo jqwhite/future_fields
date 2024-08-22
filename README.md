@@ -393,8 +393,6 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 ## References
 
-gd2md-html: xyzzy Wed Aug 07 202
-
 
     1. 	Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. Preseason crop type prediction using crop sequence boundaries. Comput Electron Agric. 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
 
