@@ -2,6 +2,7 @@
 
 Assessing crops for fields based on weather, water, sun, and soil: now and mid-century.
 
+![Future Fields Map Screenshot](images/Future_Fields_screenshot.png "Future Fields Map Sample")
 
 ## Summary
 
