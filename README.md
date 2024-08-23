@@ -350,7 +350,15 @@ Precipitation data for fields are from the Climate Toolbox Climate Mapper [7].  
 
 ![Rainfall Score Distributions](images/rainfall_score_distributions.png "Rainfall Score Distributions")
 
+## Statement of work and code attribution
 
+The Future Fields Procect was conceived and implemented by Jamie White (jqwhite@umich.edu).  Data curation, analysis, algorithms, and approaches where peformed by him. Python code was written by ChatGPT4/4o or GitHub Co-Pilot and edited by Jamie White. Writing and analysis by Jamie White.
+
+
+
+## Acknowledgements
+
+I wish to thank Dr. Elle O'Brien, University of Michigan School of Information for her guidance, wisdom and encouragement. I thank my fellow Capstone classmates in the UMSI MADS Program for their feedback, input, and encouragement.
 
 ## License information
 
