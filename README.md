@@ -381,7 +381,7 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 3. Heaivilin H. *EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database*. GitHub; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
 
-4. Food and Agricultural Organization of the United Nations. *Crop ecological requirements database (ECOCROP)*. In: Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
+4. Food and Agricultural Organization of the United Nations. *Crop ecological requirements database (ECOCROP)*. In: **Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox** [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
 
 5. Chris Marsh, Paul Harding, Ed Sears, and George Sobol. *Plants for a Future Plant Database*. In: Plants For A Future [Internet]. [cited 23 Aug 2024]. Available: [https://pfaf.org/](https://pfaf.org/)
 
