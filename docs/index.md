@@ -3,7 +3,7 @@
 
 ## Test Pages Site
 
-[Map with Crop Recommendations and Scenario Comparisons Download](https://future-fields.s3.amazonaws.com/map_with_crop_recommendations_popup_and_scenario_comparisons.html)
+[View the interactive map](https://future-fields.s3.amazonaws.com/FutureFields_Crop_Suitability_Assessment.html)
 
 
 ## Interactive Map
