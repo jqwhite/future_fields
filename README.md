@@ -240,7 +240,7 @@ There is no available soil forecast for mid-century, and it is unclear how soil 
 * 0 if the field mean representative pH is within the absolute range but not in the optimal range.
 * -1 if the field mean representative pH is outside the absolute range.
 
-**Soil pH score distribution for sample fields**
+##### Soil pH score distribution for sample fields
 
 ![pH score distribution](images/pH_score_distribution.png "pH score distribution")
 
@@ -272,9 +272,8 @@ Scoring: Does the field zone match the crop?
 * +1 if yes
 * 0 if no (lack of a match is not necessarily detrimental)
 
-**Climate zone score distribution for sample fields**
+##### Climate zone score distribution for sample fields
 
-#### 
 
 ![Climate Zone Score Distribution Plot](images/climate_zone_score_distributions.png "Climate_Zone_Score_Distributions")
 
@@ -287,7 +286,7 @@ Plant hardiness zone projections for fields are from the Climate Toolbox Climate
 * 0 if  hardiness zone information is absent
 * -1 if zone does not match
 
-**Hardiness zone score distribution for sample fields**
+##### Hardiness zone score distribution for sample fields
 
 ![USDA Plant Hardiness Score Distributions](images/image3.png "USDA Plant Hardiness Score Distributions")
 
@@ -305,7 +304,7 @@ The photoperiod score was calculated in several steps.
 4. **Check available sunlight:** If the growing season is long enough for the crop, calculate the average daily sunlight for the field from the latitude of the field and the start and end days of the growing season.
 5. **Check photoperiod requirements:** Compare the photoperiod estimate for the field latitude to the plant’s photoperiod requirements.
 
-**Photoperiod score distribution for sample fields**
+##### Photoperiod score distribution for sample fields
 
 [Photoperiod Score Distributions](images/photoperiod_score_distributions.png "Photoperiod Score Distributions")
 
@@ -325,7 +324,7 @@ Photoperiod data for fields are derived from LOCA variables from the Fourth Nati
 * Check if the minimum annual temperature is greater than the killing temperature for rest.  If not, score = -1. (Cold will kill the crop over the winter).
 * Otherwise, score as per annual crops.
 
-**Temperature score distribution for sample fields**
+##### Temperature score distribution for sample fields
 
 ![Temperature Score Distributions](images/temparature_score_distributioins.png "Temperature Score Distributions")
 
@@ -344,7 +343,7 @@ Precipitation data for fields are from the Climate Toolbox Climate Mapper [7].  
     * If yes, score = 0.5
     * If no, score = 0
 
-**Rainfall score distribution for sample fields**
+##### Rainfall score distribution for sample fields
 
 ![Rainfall Score Distributions](images/rainfall_score_distributions.png "Rainfall Score Distributions")
 
