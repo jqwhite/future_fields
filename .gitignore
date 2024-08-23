@@ -1,7 +1,8 @@
 .DS_Store
 .ipynb_checkpoints/
 datasets/
-.zip
-.gz
-.tar
+*.zip
+*.gz
+*.tar
 
+*.zip
