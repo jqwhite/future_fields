@@ -4,7 +4,7 @@ Assessing crops for fields based on weather, water, sun, and soil: now and mid-c
 
 ![Future Fields Map Screenshot](images/Future_Fields_screenshot.png "Future Fields Map Sample")
 
-[View the interactive map](https://future-fields.s3.amazonaws.com/20240818_200641_Actual_crop_score_breakdown_tree.html)
+[View the interactive map](https://future-fields.s3.amazonaws.com/FutureFields_Crop_Suitability_Assessment.html))
 
 ## Summary
 
