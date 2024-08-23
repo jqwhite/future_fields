@@ -377,9 +377,9 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 1. Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. *Preseason crop type prediction using crop sequence boundaries*. **Comput Electron Agric.** 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
 
-2. Brown M. *ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database*. GitHub; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
+2. Brown M. *ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database*. **GitHub**; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
 
-3. Heaivilin H. *EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database*. GitHub; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
+3. Heaivilin H. *EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database*. **GitHub**; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
 
 4. Food and Agricultural Organization of the United Nations. *Crop ecological requirements database (ECOCROP)*. In: **Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox** [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
 
