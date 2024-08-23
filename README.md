@@ -58,14 +58,23 @@ More details, results and discussion are presented [here](http://github.com/jqwh
 
 
 * **Agricultural field data (Crop Sequence Boundaries):** The [Crop Sequence Boundary](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/) file for the 2016-2023 growing seasons from the [National Agricultural Statistics Service](https://www.nass.usda.gov/i) [ ~[5.6Gb .zip file](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/datasets/NationalCSB_2016-2023_rev23.zip) ].  This dataset contains field location, shape, and attributes for agricultural fields in the Continental United States [ [CSB Viewer](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/i) ] [1].
+  
 * **Crop characteristics data (EcoCrop):** The [EcoCrop Crop Database](https://gaez.fao.org/pages/ecocrop) [2–4].  The version for this study was combined from two sources: [EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR) and [OpenClim](https://github.com/OpenCLIM/ecocrop) [2,3]. USDA plant hardiness zone data was scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5]. The combined, cleaned, imputed dataset used for [Future Fields](https://github.com/jqwhite/future_fields/) is available as `EcoCrop_Complete.csv`.
+
 * **Climate Zone Data:** [High-resolution (1 km) Köppen-Geiger maps for 1901–2099](https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074/1) based on constrained CMIP6 projections [[ ~90Mb .zip file](https://figshare.com/ndownloader/articles/21789074/versions/1) ] [6].
-* **USDA Plant Hardiness Zone Data:**  Hardiness zone data for fields is from Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for recent and mid-century climate scenarios** **[7].  Hardiness zone data for crops were scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5].
+
+* **USDA Plant Hardiness Zone Data:**  Hardiness zone data for fields is from Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for recent and mid-century climate scenarios [7].  Hardiness zone data for crops were scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5].
+
 * **Climate data for temperature and growing season:** [The  Localized Constructed Analogs (LOCA) Derived Variables](https://atlas.globalchange.gov/pages/nca4archive) from the [4th National Climate Assessment](https://atlas.globalchange.gov/pages/nca4archive) [ [~2.8 Gb .zip file](https://downloads.globalchange.gov/scenarios/LOCA_data_all.tar.gz) ] [8,9].
+
 * **Climate data for spring and summer temperature and precipitation:** The Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for mean and minimum summer temperatures, minimum annual temperatures, and annual precipitation for recent and mid-century climate scenarios** **[7].
+
 * **Crop translator:** A translation file of Cropland Data Layer / Crop Sequence Boundary crop codes to likely EcoCrop species: `cdl_to_ecocrop_code_translator.csv`
+
 * **Climate zone translator:** A translation file from Köppen-Geiger Climate Zones (Climate Model) to Trewartha Climate Zones (EcoCrop): `trewartha_to_koppen_geiger.txt` in the `data/ climate/zones/` folder.
+
 * **Elevation:** Digital Elevation Model from the [PRISM Climate Group](https://prism.oregonstate.edu/downloads/) [ [835 Kb zip](https://prism.oregonstate.edu/downloads/data/PRISM_us_dem_4km_bil.zip) ] [10].
+
 * **Soils:** [The Gridded National Soil Survey Geographic Database (gNATSGO)](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo) [ [8Gb zip file](https://nrcs.app.box.com/v/soils/folder/233393842838) ] [11].
 
 
