@@ -318,7 +318,7 @@ The photoperiod score was calculated in several steps.
 
 ##### Photoperiod score distribution for sample fields
 
-[Photoperiod Score Distributions](images/photoperiod_score_distributions.png "Photoperiod Score Distributions")
+![Photoperiod Score Distributions](images/photoperiod_score_distributions.png "Photoperiod Score Distributions")
 
 
 #### Temperature
