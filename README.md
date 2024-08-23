@@ -300,7 +300,7 @@ Plant hardiness zone projections for fields are from the Climate Toolbox Climate
 
 ##### Hardiness zone score distribution for sample fields
 
-![USDA Plant Hardiness Score Distributions](images/image3.png "USDA Plant Hardiness Score Distributions")
+![USDA Plant Hardiness Score Distributions](images/hardiness_score_distributions.png "USDA Plant Hardiness Score Distributions")
 
 
 
