@@ -361,7 +361,7 @@ Precipitation data for fields are from the Climate Toolbox Climate Mapper [7].  
 
 ## Statement of work and code attribution
 
-The Future Fields Procect was conceived and implemented by Jamie White (jqwhite@umich.edu).  Data curation, analysis, algorithms, and approaches where peformed by him. Python code was written by ChatGPT4/4o or GitHub Co-Pilot and edited for use by Jamie White. Writing and analysis by Jamie White. Errors and omissions are solely his.
+The Future Fields Project was conceived and implemented by Jamie White (jqwhite@umich.edu). Data curation, analysis, algorithms, and approaches were performed by him. Python code was written by ChatGPT-4/4.0 or GitHub Copilot and edited for use by Jamie White. Writing and analysis by Jamie White. Errors and omissions are solely his.
 
 
 ## Acknowledgements
