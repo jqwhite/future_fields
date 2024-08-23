@@ -201,13 +201,9 @@ Scenarios from the Fourth National Climate Assessment [8]:
 
 Scenarios from the Climate Toolbox Climate Mapper [7]: 
 
+>“The scenarios come from the Fifth Coupled Model Inter-Comparison Project (CMIP5). The future emission scenarios are in terms of Representative Concentration Pathways (RCPs), which describe future scenarios of socioeconomic development that consider economic, demographic, technological and policy futures for the 21st century and beyond.”
 
-    “The scenarios come from the Fifth Coupled Model Inter-Comparison Project (CMIP5). The future emission scenarios are in terms of Representative Concentration Pathways (RCPs), which describe future scenarios of socioeconomic development that consider economic, demographic, technological and policy futures for the 21st century and beyond.”
-
-
-    The emission scenarios utilized here are:
-
-
+The emission scenarios utilized here are:
 
 * Historical simulations: modeled greenhouse gases and aerosols - mean of models for 1971-2000 
 * Lower Emissions (RCP 4.5) : a future scenario of moderate climate policy (e.g., mitigation) - means for 2040-2069
@@ -215,13 +211,10 @@ Scenarios from the Climate Toolbox Climate Mapper [7]:
 
 Scenarios from Köppen-Geiger climate zone forecasts[6]:
 
-
-    “The historical maps (encompassing[…]1991–2020) are based on high-resolution, observation-based climatologies. The future maps (encompassing 2041–2070 and 2071–2099) are based on downscaled and bias-corrected climate projections from the Coupled Model Intercomparison Project phase 6 (CMIP6) and cover seven Shared Socio-economic Pathways (SSPs). We evaluated 67 climate models and selected 42 with the most plausible CO2-induced warming rates to derive the future maps.[[Citation error]](http://127.0.0.1:8080/c/error)”
-
-
-    The emission scenarios utilized here are:
+>“The historical maps (encompassing[…]1991–2020) are based on high-resolution, observation-based climatologies. The future maps (encompassing 2041–2070 and 2071–2099) are based on downscaled and bias-corrected climate projections from the Coupled Model Intercomparison Project phase 6 (CMIP6) and cover seven Shared Socio-economic Pathways (SSPs). We evaluated 67 climate models and selected 42 with the most plausible CO2-induced warming rates to derive the future maps.[[Citation error]](http://127.0.0.1:8080/c/error)”
 
 
+The emission scenarios utilized here are:
 
 * Historical observations 1991-2020
 * 2041-2070 SSP245 Projections 
@@ -232,20 +225,16 @@ Scenarios from Köppen-Geiger climate zone forecasts[6]:
 
 Details are in the `Score_*.ipynb` notebooks for each score. In general, for each field, crop, scenario combination, the score was 
 
-
-
 * -1 if the field conditions were obviously detrimental to the plant, 
 * 0 if neutral or no data, and 
 * +1 if the field conditions matched the plant’s requirement
 
-A summary of each score calculation is provided here.
+A summary of each score calculation is provided below.
 
 
 #### Soil pH
 
 There is no available soil forecast for mid-century, and it is unclear how soil pH will change with climate, so the current pH values were used for all 3 scenarios: current/recent past and mid-century projections.The pH values for all soil data within a field boundary (shape) were averaged.  The average pH over the field was compared to the pH requirements for the crop (representative value measured in water, `ph1to1h2o_r`) and scored as follows:
-
-
 
 * +1 if the field mean representative pH is within the optimal range.
 * 0 if the field mean representative pH is within the absolute range but not in the optimal range.
@@ -253,15 +242,11 @@ There is no available soil forecast for mid-century, and it is unclear how soil 
 
 **Soil pH score distribution for sample fields**
 
-
 ![pH score distribution](images/pH_score_distribution.png "pH score distribution")
-
-
 
 #### Climate Zone
 
-Köppen-Geiger climate zone data are from reference [6]. The Köppen-Geiger for each field and scenario was compared to the Trewartha climate zone of each crop using the mapping
-
+Köppen-Geiger climate zone data are from reference [6]. The Köppen-Geiger for each field and scenario was compared to the Trewartha climate zone of each crop using the mapping:
 
 ```
 # Trewartha to Köppen–Geiger mapping
@@ -282,31 +267,21 @@ trewartha_to_koppen = {
 }
 ```
 
-
-Does the field zone match the crop?  
-
-
+Scoring: Does the field zone match the crop?  
 
 * +1 if yes
 * 0 if no (lack of a match is not necessarily detrimental)
 
 **Climate zone score distribution for sample fields**
 
-
 #### 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![climate_zone_score_distributions](images/climate_zone_score_distributions.png "image_tooltip")
 
 
 #### USDA Plant Hardiness zone
 
 Plant hardiness zone projections for fields are from the Climate Toolbox Climate Mapper [7].  Hardiness zone data for crops are from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5].  Hardiness zones are more strict, so if the zone of the field does not match it is most likely detrimental to the crop. Does field match the crops USDA Plant Hardiness zone?
-
-
 
 * 1 if yes
 * 0 if  hardiness zone information is absent
