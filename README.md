@@ -122,7 +122,7 @@ A full example `conda` environment is provided in `requirements.txt`
   <tr>
    <td><code>EcoCrop_feature_names.ipynb</code>
    </td>
-   <td>Inspection of EcoCrop variable (column) names from the <a href="https://github.com/OpenCLIM/ecocrop">OpenClim</a> download of the EcoCrop datase; mapping of column names to full explanation.
+   <td>Inspection of EcoCrop variable (column) names from the <a href="https://github.com/OpenCLIM/ecocrop">OpenClim</a> download of the EcoCrop dataset mapping of column names to full explanation.
    </td>
   </tr>
   <tr>
@@ -405,6 +405,6 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 10.  PRISM Climate Group, Oregon State University. PRISM Spatial Climate Datasets for the Conterminous United States. 2014. Available: [https://prism.oregonstate.edu,](https://prism.oregonstate.edu,)
 
-11.  Soil Survey Staff. _Soil Survey Staff. Gridded National Soil Survey Geographic (gNATSGO) Database for the Conterminous United States_. In: _United States Department of Agriculture, Natural Resources Conservation Service_ [Internet]. 19 Dec 2023 [cited 23 Aug 2024]. Available: [https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo)
+11.  Soil Survey Staff. _Gridded National Soil Survey Geographic (gNATSGO) Database for the Conterminous United States_. In: _United States Department of Agriculture, Natural Resources Conservation Service_ [Internet]. 19 Dec 2023 [cited 23 Aug 2024]. Available: [https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo)
 
 12.  Gonzalez, P., G.M. Garfin, D.D. Breshears, K.M. Brooks, H.E. Brown, E.H. Elias, A. Gunasekara, N. Huntly, J.K. Maldonado, N.J. Mantua, H.G. Margolis, S. McAfee, B.R. Middleton, and B.H. Udall. 2018: Southwest. In: Reidmiller, D.R., C.W. Avery, D.R. Easterling, K.E. Kunkel, K.L.M. Lewis, T.K. Maycock, and B.C. Stewart, editor. Impacts, risks, and adaptation in the United States: Fourth national climate assessment, volume II. Washington DC: U.S. Global Change Research Program; 2018. pp. 1101–1184. Available: [https://nca2018.globalchange.gov/chapter/southwest](https://nca2018.globalchange.gov/chapter/southwest)
