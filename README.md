@@ -375,7 +375,7 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 ## References
 
-1. Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. *Preseason crop type prediction using crop sequence boundaries*. Comput Electron Agric. 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
+1. Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. *Preseason crop type prediction using crop sequence boundaries*. **Comput Electron Agric.** 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
 
 2. Brown M. *ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database*. GitHub; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
 
