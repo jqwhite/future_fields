@@ -2,6 +2,9 @@
 
 Assessing crops for fields based on weather, water, sun, and soil: now and mid-century.
 
+![Future Fields Map Screenshot](images/Future_Fields_screenshot.png "Future Fields Map Sample")
+
+[ [View the interactive map](https://future-fields.s3.amazonaws.com/FutureFields_Crop_Suitability_Assessment.html) |  [Watch a video walkthrough](https://future-fields.s3.amazonaws.com/Future_Fields_Video_Walkthrough.mp4) ]
 
 ## Summary
 
@@ -55,14 +58,23 @@ More details, results and discussion are presented [here](http://github.com/jqwh
 
 
 * **Agricultural field data (Crop Sequence Boundaries):** The [Crop Sequence Boundary](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/) file for the 2016-2023 growing seasons from the [National Agricultural Statistics Service](https://www.nass.usda.gov/i) [ ~[5.6Gb .zip file](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/datasets/NationalCSB_2016-2023_rev23.zip) ].  This dataset contains field location, shape, and attributes for agricultural fields in the Continental United States [ [CSB Viewer](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/i) ] [1].
+  
 * **Crop characteristics data (EcoCrop):** The [EcoCrop Crop Database](https://gaez.fao.org/pages/ecocrop) [2–4].  The version for this study was combined from two sources: [EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR) and [OpenClim](https://github.com/OpenCLIM/ecocrop) [2,3]. USDA plant hardiness zone data was scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5]. The combined, cleaned, imputed dataset used for [Future Fields](https://github.com/jqwhite/future_fields/) is available as `EcoCrop_Complete.csv`.
+
 * **Climate Zone Data:** [High-resolution (1 km) Köppen-Geiger maps for 1901–2099](https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074/1) based on constrained CMIP6 projections [[ ~90Mb .zip file](https://figshare.com/ndownloader/articles/21789074/versions/1) ] [6].
-* **USDA Plant Hardiness Zone Data:**  Hardiness zone data for fields is from Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for recent and mid-century climate scenarios** **[7].  Hardiness zone data for crops were scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5].
+
+* **USDA Plant Hardiness Zone Data:**  Hardiness zone data for fields is from Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for recent and mid-century climate scenarios [7].  Hardiness zone data for crops were scraped from the [Plants for a Future](https://pfaf.org/user/plantsearch.aspx) database [5].
+
 * **Climate data for temperature and growing season:** [The  Localized Constructed Analogs (LOCA) Derived Variables](https://atlas.globalchange.gov/pages/nca4archive) from the [4th National Climate Assessment](https://atlas.globalchange.gov/pages/nca4archive) [ [~2.8 Gb .zip file](https://downloads.globalchange.gov/scenarios/LOCA_data_all.tar.gz) ] [8,9].
-* **Climate data for spring and summer temperature and precipitation:** The Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for mean and minimum summer temperatures, minimum annual temperatures, and annual precipitation for recent and mid-century climate scenarios** **[7].
+
+* **Climate data for spring and summer temperature and precipitation:** The Climate Toolbox [Climate Mapper](https://climatetoolbox.org/tool/Climate-Mapper) datasets for mean and minimum summer temperatures, minimum annual temperatures, and annual precipitation for recent and mid-century climate scenarios [7].
+
 * **Crop translator:** A translation file of Cropland Data Layer / Crop Sequence Boundary crop codes to likely EcoCrop species: `cdl_to_ecocrop_code_translator.csv`
+
 * **Climate zone translator:** A translation file from Köppen-Geiger Climate Zones (Climate Model) to Trewartha Climate Zones (EcoCrop): `trewartha_to_koppen_geiger.txt` in the `data/ climate/zones/` folder.
+
 * **Elevation:** Digital Elevation Model from the [PRISM Climate Group](https://prism.oregonstate.edu/downloads/) [ [835 Kb zip](https://prism.oregonstate.edu/downloads/data/PRISM_us_dem_4km_bil.zip) ] [10].
+
 * **Soils:** [The Gridded National Soil Survey Geographic Database (gNATSGO)](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo) [ [8Gb zip file](https://nrcs.app.box.com/v/soils/folder/233393842838) ] [11].
 
 
@@ -110,7 +122,7 @@ A full example `conda` environment is provided in `requirements.txt`
   <tr>
    <td><code>EcoCrop_feature_names.ipynb</code>
    </td>
-   <td>Inspection of EcoCrop variable (column) names from the <a href="https://github.com/OpenCLIM/ecocrop">OpenClim</a> download of the EcoCrop datase; mapping of column names to full explanation.
+   <td>Inspection of EcoCrop variable (column) names from the <a href="https://github.com/OpenCLIM/ecocrop">OpenClim</a> download of the EcoCrop dataset mapping of column names to full explanation.
    </td>
   </tr>
   <tr>
@@ -240,7 +252,7 @@ There is no available soil forecast for mid-century, and it is unclear how soil 
 * 0 if the field mean representative pH is within the absolute range but not in the optimal range.
 * -1 if the field mean representative pH is outside the absolute range.
 
-**Soil pH score distribution for sample fields**
+##### Soil pH score distribution for sample fields
 
 ![pH score distribution](images/pH_score_distribution.png "pH score distribution")
 
@@ -272,9 +284,8 @@ Scoring: Does the field zone match the crop?
 * +1 if yes
 * 0 if no (lack of a match is not necessarily detrimental)
 
-**Climate zone score distribution for sample fields**
+##### Climate zone score distribution for sample fields
 
-#### 
 
 ![Climate Zone Score Distribution Plot](images/climate_zone_score_distributions.png "Climate_Zone_Score_Distributions")
 
@@ -287,9 +298,9 @@ Plant hardiness zone projections for fields are from the Climate Toolbox Climate
 * 0 if  hardiness zone information is absent
 * -1 if zone does not match
 
-**Hardiness zone score distribution for sample fields**
+##### Hardiness zone score distribution for sample fields
 
-![USDA Plant Hardiness Score Distributions](images/image3.png "USDA Plant Hardiness Score Distributions")
+![USDA Plant Hardiness Score Distributions](images/hardiness_score_distributions.png "USDA Plant Hardiness Score Distributions")
 
 
 
@@ -305,9 +316,9 @@ The photoperiod score was calculated in several steps.
 4. **Check available sunlight:** If the growing season is long enough for the crop, calculate the average daily sunlight for the field from the latitude of the field and the start and end days of the growing season.
 5. **Check photoperiod requirements:** Compare the photoperiod estimate for the field latitude to the plant’s photoperiod requirements.
 
-**Photoperiod score distribution for sample fields**
+##### Photoperiod score distribution for sample fields
 
-[Photoperiod Score Distributions](images/photoperiod_score_distributions.png "Photoperiod Score Distributions")
+![Photoperiod Score Distributions](images/photoperiod_score_distributions.png "Photoperiod Score Distributions")
 
 
 #### Temperature
@@ -325,7 +336,7 @@ Photoperiod data for fields are derived from LOCA variables from the Fourth Nati
 * Check if the minimum annual temperature is greater than the killing temperature for rest.  If not, score = -1. (Cold will kill the crop over the winter).
 * Otherwise, score as per annual crops.
 
-**Temperature score distribution for sample fields**
+##### Temperature score distribution for sample fields
 
 ![Temperature Score Distributions](images/temparature_score_distributioins.png "Temperature Score Distributions")
 
@@ -344,11 +355,18 @@ Precipitation data for fields are from the Climate Toolbox Climate Mapper [7].  
     * If yes, score = 0.5
     * If no, score = 0
 
-**Rainfall score distribution for sample fields**
+##### Rainfall score distribution for sample fields
 
 ![Rainfall Score Distributions](images/rainfall_score_distributions.png "Rainfall Score Distributions")
 
+## Statement of work and code attribution
 
+The Future Fields Project was conceived and implemented by Jamie White (jqwhite@umich.edu). Data curation, analysis, algorithms, and approaches were performed by him. Python code was written by ChatGPT-4/4.0 or GitHub Copilot and edited for use by Jamie White. Writing and analysis by Jamie White. Errors and omissions are solely his.
+
+
+## Acknowledgements
+
+I wish to thank Dr. Elle O'Brien, University of Michigan School of Information for her guidance, wisdom and encouragement. I thank my fellow Capstone classmates in the UMSI MADS Program for their feedback, input, and encouragement.
 
 ## License information
 
@@ -357,38 +375,26 @@ The code here is provided under the MIT License. Details are in the `LICENSE` fi
 
 ## References
 
+1. Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. *Preseason crop type prediction using crop sequence boundaries*. **Comput Electron Agric.** 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
 
-1. 	Abernethy J, Beeson P, Boryan C, Hunt K, Sartore L. Preseason crop type prediction using crop sequence boundaries. Comput Electron Agric. 2023;208: 107768. doi:[10.1016/j.compag.2023.107768](http://dx.doi.org/10.1016/j.compag.2023.107768)
+2. Brown M. *ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database*. **GitHub**; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
 
+3. Heaivilin H. *EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database*. **GitHub**; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
 
-2. 	Brown M. ecocrop: Crop suitability model using the FAO EcoCrop crop characteristic database. Github; Available: [https://github.com/OpenCLIM/ecocrop](https://github.com/OpenCLIM/ecocrop)
+4. Food and Agricultural Organization of the United Nations. *Crop ecological requirements database (ECOCROP)*. In: **Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox** [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
 
+5. Chris Marsh, Paul Harding, Ed Sears, and George Sobol. *Plants for a Future Plant Database*. In: **Plants For A Future** [Internet]. [cited 23 Aug 2024]. Available: [https://pfaf.org/](https://pfaf.org/)
 
-3. 	Heaivilin H. EcoCrop-ScrapeR: Using R to scrape the FAO EcoCrop database. Github; Available: [https://github.com/supersistence/EcoCrop-ScrapeR](https://github.com/supersistence/EcoCrop-ScrapeR)
+6. Beck HE, McVicar TR, Vergopolan N, Berg A, Lutsko NJ, Dufour A, et al. *High-resolution (1 km) Köppen-Geiger maps for 1901-2099 based on constrained CMIP6 projections*. **Sci Data.** 2023;10: 724. doi:[10.1038/s41597-023-02549-6](http://dx.doi.org/10.1038/s41597-023-02549-6)
 
+7. Hegewisch KC, Abatzoglou JT. *“Climate Mapper” web tool*. In: **Climate Toolbox** [Internet]. [cited 7 Aug 2024]. Available: [https://climatetoolbox.org/](https://climatetoolbox.org/)
 
-4. 	Food and Agricultural Organization of the United Nations. Crop ecological requirements database (ECOCROP). In: Food and Agricultural Organization of the United Nations | Land & Water | Land Resources Planning Toolbox [Internet]. 2015 [cited 10 Jun 2024]. Available: [https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/](https://www.fao.org/land-water/land/land-governance/land-resources-planning-toolbox/category/details/en/c/1027491/)
+8. U.S. Global Change Research Program (2009- ). *Fourth National Climate Assessment: Impacts, Risks, and Adaptation in the United States*. **U.S. Global Change Research Program**; 2017. Available: [https://play.google.com/store/books/details?id=RlVFxwEACAAJ](https://play.google.com/store/books/details?id=RlVFxwEACAAJ)
 
+9. U.S. Global Change Research Program (2009- ). *Fourth National Climate Assessment: Impacts, risks, and adaptation in the United States*. **U.S. Global Change Research Program**; 2018. Available: [https://play.google.com/store/books/details?id=l0cBvwEACAAJ](https://play.google.com/store/books/details?id=l0cBvwEACAAJ)
 
-5. 	Chris Marsh, Paul Harding, Ed Sears and George Sobol. Plants for a Future Plant Database. In: Plants For A Future [Internet]. [cited 23 Aug 2024]. Available: [https://pfaf.org/](https://pfaf.org/)
+10. PRISM Climate Group, Oregon State University. *PRISM Spatial Climate Datasets for the Conterminous United States*. **PRISM Climate Group, Oregon State University**; 2014. Available: [https://prism.oregonstate.edu/](https://prism.oregonstate.edu/)
 
+11. Soil Survey Staff. *Gridded National Soil Survey Geographic (gNATSGO) Database for the Conterminous United States*. In: **United States Department of Agriculture, Natural Resources Conservation Service** [Internet]. 19 Dec 2023 [cited 23 Aug 2024]. Available: [https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo)
 
-6. 	Beck HE, McVicar TR, Vergopolan N, Berg A, Lutsko NJ, Dufour A, et al. High-resolution (1 km) Köppen-Geiger maps for 1901-2099 based on constrained CMIP6 projections. Sci Data. 2023;10: 724. doi:[10.1038/s41597-023-02549-6](http://dx.doi.org/10.1038/s41597-023-02549-6)
-
-
-7. 	Hegewisch KCAJTA. “Climate Mapper” web tool. In: Climate Toolbox [Internet]. [cited 7 Aug 2024]. Available: [https://climatetoolbox.org/](https://climatetoolbox.org/)
-
-
-8. 	U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, Risks, and Adaptation in the United States. Summary findings and overview. U.S. Global Change Research Program; 2017. Available: [https://play.google.com/store/books/details?id=RlVFxwEACAAJ](https://play.google.com/store/books/details?id=RlVFxwEACAAJ)
-
-
-9. 	U.S. Global Change Research Program (2009- ). Fourth National Climate Assessment: Impacts, risks, and adaptation in the United States. Report-in-brief. U.S. Global Change Research Program; 2018. Available: [https://play.google.com/store/books/details?id=l0cBvwEACAAJ](https://play.google.com/store/books/details?id=l0cBvwEACAAJ)
-
-
-10. 	PRISM Climate Group, Oregon State University. PRISM Spatial Climate Datasets for the Conterminous United States. 2014. Available: [https://prism.oregonstate.edu,](https://prism.oregonstate.edu,)
-
-
-11. 	Soil Survey Staff. _Soil Survey Staff. Gridded National Soil Survey Geographic (gNATSGO) Database for the Conterminous United States_. In: _United States Department of Agriculture, Natural Resources Conservation Service_ [Internet]. 19 Dec 2023 [cited 23 Aug 2024]. Available: [https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo](https://www.nrcs.usda.gov/resources/data-and-reports/gridded-national-soil-survey-geographic-database-gnatsgo)
-
-
-12. 	Gonzalez, P., G.M. Garfin, D.D. Breshears, K.M. Brooks, H.E. Brown, E.H. Elias, A. Gunasekara, N. Huntly, J.K. Maldonado, N.J. Mantua, H.G. Margolis, S. McAfee, B.R. Middleton, and B.H. Udall. 2018: Southwest. In: Reidmiller, D.R., C.W. Avery, D.R. Easterling, K.E. Kunkel, K.L.M. Lewis, T.K. Maycock, and B.C. Stewart, editor. Impacts, risks, and adaptation in the United States: Fourth national climate assessment, volume II. Washington DC: U.S. Global Change Research Program; 2018. pp. 1101–1184. Available: [https://nca2018.globalchange.gov/chapter/southwest](https://nca2018.globalchange.gov/chapter/southwest)
+12. Gonzalez P, Garfin GM, Breshears DD, Brooks KM, Brown HE, Elias EH, et al. 2018: *Southwest*. In: Reidmiller DR, Avery CW, Easterling DR, Kunkel KE, Lewis KLM, Maycock TK, Stewart BC, editors. *Impacts, risks, and adaptation in the United States: Fourth national climate assessment, volume II*. Washington DC: **U.S. Global Change Research Program**; 2018. pp. 1101–1184. Available: [https://nca2018.globalchange.gov/chapter/southwest](https://nca2018.globalchange.gov/chapter/southwest)
