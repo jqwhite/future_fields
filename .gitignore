@@ -6,3 +6,4 @@ datasets/
 *.tar
 
 *.zip
+data/scores/score_matrix_overall_stacked.nc
